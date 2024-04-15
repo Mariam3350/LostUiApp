@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'package:lostcalapp/compoments/babybluebutton.dart';
 
-class UpdateYourName extends StatelessWidget {
-  const UpdateYourName({super.key});
+class UpdateYourPassword extends StatelessWidget {
+  const UpdateYourPassword({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +24,7 @@ class UpdateYourName extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Update Your Name',
+                  'Update Your Password',
                   style: TextStyle(
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.w700,
@@ -84,9 +85,9 @@ class UpdateYourName extends StatelessWidget {
               children: [
                 Positioned(
                     top: 45,
-                    left: 50,
+                    left: 10,
                     child:
-                        Image.asset("assets/undraw_Updates_re_o5af (1) 1.png")),
+                    Image.asset("assets/Group 135 1.png")),
 
 
                 Padding(
@@ -96,7 +97,7 @@ class UpdateYourName extends StatelessWidget {
                     children: [
                       SizedBox(height: 40,),
 
-                      Image(image: AssetImage("assets/pen 8.png")),
+                      Image(image: AssetImage("assets/padlock 3 (1).png")),
                       SizedBox(
                         height: 40,
                       ),
@@ -106,13 +107,13 @@ class UpdateYourName extends StatelessWidget {
                           prefixIcon: Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Image.asset(
-                              'assets/profile 4.png',
+                              'assets/padlock 3 (1).png',
                               width: 20,
                               height: 20,
                               fit: BoxFit.fill,
                             ),
                           ),
-                          hintText: "Enter New Name",
+                          hintText: "Enter New Password",
                           hintStyle: TextStyle(
                             color: Colors.grey,
                           ),
@@ -127,22 +128,22 @@ class UpdateYourName extends StatelessWidget {
                       SizedBox(height: 30,),
 
                       ElevatedButton(
-                          onPressed: (){} ,
+                        onPressed: (){} ,
 
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0XFF50C0E1),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Color(0XFF50C0E1),
 
-                            elevation: 4,
-                            fixedSize: Size( 176, 53),
-                          ),
-                          child:  Text(  "Update",
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.w300,
-                              color: Colors.black,
-                            ),
+                          elevation: 4,
+                          fixedSize: Size( 176, 53),
+                        ),
+                        child:  Text(  "Update",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w300,
+                            color: Colors.black,
                           ),
                         ),
+                      ),
                       SizedBox(height: 100,),
                     ],
                   ),

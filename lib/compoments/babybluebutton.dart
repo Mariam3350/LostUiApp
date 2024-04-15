@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class BlueButton extends StatelessWidget {
-  BlueButton({this.onTap,required this.y, required this.x, this.text,});
+class BabyBlueButton extends StatelessWidget {
+  BabyBlueButton({this.onTap,required this.y, required this.x, this.text,});
   String? text;
   double x,y;
   Function()? onTap;

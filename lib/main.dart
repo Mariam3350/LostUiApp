@@ -8,6 +8,7 @@ import 'package:lostcalapp/screens/select_screen.dart';
 import 'package:lostcalapp/screens/signup_screen.dart';
 import 'package:lostcalapp/screens/updatepassword_screen.dart';
 import 'package:lostcalapp/screens/updateyourname_screen.dart';
+import 'package:lostcalapp/screens/updateyourpassword_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
   debugShowCheckedModeBanner: false,
       routes: {
-        "/": (context) => const UpdateYourName(),
+        "/": (context) => const InfoPage(),
         "/login": (context) => const ForgetPasswordPage(),
 
       },
