@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lostcalapp/screens/forgetpassword_screen.dart';
 import 'package:lostcalapp/screens/home_screen.dart';
+import 'package:lostcalapp/screens/info_screen.dart';
 import 'package:lostcalapp/screens/login_screen.dart';
 import 'package:lostcalapp/screens/secretcode_screen.dart';
 import 'package:lostcalapp/screens/select_screen.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
   debugShowCheckedModeBanner: false,
       routes: {
-        "/": (context) => const SelectPage(),
+        "/": (context) => const UpdateYourName(),
         "/login": (context) => const ForgetPasswordPage(),
 
       },
