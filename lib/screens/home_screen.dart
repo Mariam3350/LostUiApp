@@ -41,15 +41,15 @@ class HomePage extends StatelessWidget {
               children: [
                 Positioned(
                     left: 40,
-                    top: 515,
+                    top: 500,
                     child: Image.asset("assets/Group 2.png")),
                 Positioned(
                     left: 70,
-                    top: 558,
+                    top: 538,
                     child: Image.asset("assets/Ellipse 15.png")),
                 Positioned(
                     left: 40,
-                    top: 565,
+                    top: 545,
                     child: Image.asset("assets/Ellipse 9.png")),
                 Positioned(
                     left: 135,
@@ -57,66 +57,93 @@ class HomePage extends StatelessWidget {
                     child: Image.asset("assets/Group 1.png")),
                 Positioned(
                     left: 230,
-                    top: 520,
+                    top: 510,
                     child: Image.asset("assets/Line 1.png")),
                 Positioned(
                     left: 224,
-                    top: 510,
+                    top: 500,
                     child: Image.asset("assets/Ellipse 175.png")),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-      
-                  children: [
-                    Text(
-                      'Find The Lost',
-                      style: TextStyle(
-                        fontFamily: 'Inter',
-                        fontWeight: FontWeight.w700,
-                        fontSize: 20,
-                        height: 1.1764705882352941,
-                        color: Colors
-                            .black, // Adjust this color according to your need
-                      ),),
-                    SizedBox(height: 10,),
-                    Text(
-                      'SAVE',
-                      style: TextStyle(
-                        fontFamily: 'Inter',
-                        fontWeight: FontWeight.w700,
-                        fontSize: 21,
-                        height: 1.1764705882352941,
-                        color: Colors
-                            .black, // Adjust this color according to your need
-                      ),),
-                    SizedBox(height: 10,),
-                    Text(
-                      'The Day',
-                      style: TextStyle(
-                        fontFamily: 'Inter',
-                        fontWeight: FontWeight.w700,
-                        fontSize: 20.5,
-                        height: 1.1764705882352941,
-                        color: Colors
-                            .black, // Adjust this color according to your need
-                      ),),
-                    SizedBox(height: 10,),
-                    BlueButton(
-                      text: "Log in",
-                      x: 150,
-                      y: 48,
-                      onTap: (){
-                      },
-      
-                    ),
-                    BlueButton(
-                      text: "hhh",
-                      x: 150,
-                      y: 48,
-      
-                    ),
-      
-                  ],
+
+Positioned(
+    right: 0,
+    top: 510,
+    child: Image.asset("assets/flower.png")),
+                Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+
+                    children: [
+                      Spacer(flex: 1,),
+                      Text(
+                        'Find The Lost',
+                        style: TextStyle(
+                          fontFamily: 'Inter',
+                          fontWeight: FontWeight.w700,
+                          fontSize: 20,
+                          height: 1.1764705882352941,
+                          color: Colors
+                              .black, // Adjust this color according to your need
+                        ),),
+                      SizedBox(height: 10,),
+                      Text(
+                        'SAVE',
+                        style: TextStyle(
+                          fontFamily: 'Inter',
+                          fontWeight: FontWeight.w700,
+                          fontSize: 21,
+                          height: 1.1764705882352941,
+                          color: Colors
+                              .black, // Adjust this color according to your need
+                        ),),
+                      SizedBox(height: 10,),
+                      Text(
+                        'The Day',
+                        style: TextStyle(
+                          fontFamily: 'Inter',
+                          fontWeight: FontWeight.w700,
+                          fontSize: 20.5,
+                          height: 1.1764705882352941,
+                          color: Colors
+                              .black, // Adjust this color according to your need
+                        ),),
+                      Spacer(flex: 1,),
+                      SizedBox(height: 10,),
+                      BlueButton(
+                        text: "Login",
+                        x: 150,
+                        y: 48,
+                        onTap: (){
+                          Navigator.pushNamed(context, "/login");
+                        },
+                      ),
+                      SizedBox(height: 30,),
+                      OutlinedButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, "/signup");
+                          // Perform an action when the button is pressed
+                        },
+                        style: OutlinedButton.styleFrom(
+
+                          foregroundColor: Color(0XFF509BE1),side: const BorderSide(color: Colors.blue, width: 3),
+
+                          elevation: 4,
+                          fixedSize: Size(150, 48),
+                        ),
+                        child: const Text(
+                          'Sign up',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w300,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      SizedBox(height:40 ,),
+
+
+
+                    ],
+                  ),
                 ),
       
       
